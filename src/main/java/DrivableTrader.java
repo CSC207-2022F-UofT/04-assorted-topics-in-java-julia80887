@@ -28,6 +28,10 @@ class DrivableTrader extends Trader<Drivable> {
         super(inventory, wishlist, money);
     }
 
+    public DrivableTrader(int money) {
+        super(money);
+    }
+
     @Override
     public int getSellingPrice (Drivable item) {
         if (item instanceof Tradable) {
